@@ -1,6 +1,7 @@
 import React from 'react';
 import Chart from './components/Chart';
 import Chatbot from './components/Chatbot';
+import ExpertAdvice from './components/ExpertAdvice';
 
 function App() {
   return (
@@ -18,7 +19,10 @@ function App() {
       <main className="max-w-7xl mx-auto px-4 py-6">
         <div className="flex gap-6">
           <Chart />
-          <Chatbot />
+          <div className="flex flex-col gap-6">
+            <ExpertAdvice />
+            <Chatbot />
+          </div>
         </div>
       </main>
     </div>
